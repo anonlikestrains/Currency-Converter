@@ -55,6 +55,10 @@ public class ConverterForm extends javax.swing.JFrame {
         InputAmount = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("GBP Converter");
+        setLocation(new java.awt.Point(500, 250));
+        setResizable(false);
+        setType(java.awt.Window.Type.UTILITY);
 
         Input3.setText("3");
         Input3.addActionListener(new java.awt.event.ActionListener() {
