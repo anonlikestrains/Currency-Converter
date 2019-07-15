@@ -11,6 +11,8 @@ package MainPackage;
  */
 public class ConverterForm extends javax.swing.JFrame {
 
+    String InputString = "";
+
     /**
      * Creates new form ConverterForm
      */
@@ -27,44 +29,409 @@ public class ConverterForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
+        Input3 = new javax.swing.JButton();
+        Input0 = new javax.swing.JButton();
+        DeleteLast = new javax.swing.JButton();
+        ClearAll = new javax.swing.JButton();
+        Input7 = new javax.swing.JButton();
+        Input8 = new javax.swing.JButton();
+        Input9 = new javax.swing.JButton();
+        Input4 = new javax.swing.JButton();
+        Input5 = new javax.swing.JButton();
+        Input6 = new javax.swing.JButton();
+        Input1 = new javax.swing.JButton();
+        Input2 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        Output1 = new javax.swing.JLabel();
+        Output2 = new javax.swing.JLabel();
+        Output3 = new javax.swing.JLabel();
+        Output4 = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        InputAmount = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("7");
+        Input3.setText("3");
+        Input3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Input3ActionPerformed(evt);
+            }
+        });
 
-        jButton2.setText("8");
+        Input0.setText("0");
+        Input0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Input0ActionPerformed(evt);
+            }
+        });
 
-        jButton3.setText("9");
+        DeleteLast.setText("DEL");
+        DeleteLast.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                DeleteLastActionPerformed(evt);
+            }
+        });
+
+        ClearAll.setText("CLR");
+        ClearAll.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ClearAllActionPerformed(evt);
+            }
+        });
+
+        Input7.setText("7");
+        Input7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Input7ActionPerformed(evt);
+            }
+        });
+
+        Input8.setText("8");
+        Input8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Input8ActionPerformed(evt);
+            }
+        });
+
+        Input9.setText("9");
+        Input9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Input9ActionPerformed(evt);
+            }
+        });
+
+        Input4.setText("4");
+        Input4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Input4ActionPerformed(evt);
+            }
+        });
+
+        Input5.setText("5");
+        Input5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Input5ActionPerformed(evt);
+            }
+        });
+
+        Input6.setText("6");
+        Input6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Input6ActionPerformed(evt);
+            }
+        });
+
+        Input1.setText("1");
+        Input1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Input1ActionPerformed(evt);
+            }
+        });
+
+        Input2.setText("2");
+        Input2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                Input2ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(Input0)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(DeleteLast)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(ClearAll))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(Input1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Input2)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Input3))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(Input4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Input5)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Input6))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(Input7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Input8)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(Input9)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel1Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {ClearAll, DeleteLast, Input0, Input1, Input2, Input3, Input4, Input5, Input6, Input7, Input8, Input9});
+
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Input7)
+                    .addComponent(Input8)
+                    .addComponent(Input9))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Input4)
+                    .addComponent(Input5)
+                    .addComponent(Input6))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Input1)
+                    .addComponent(Input2)
+                    .addComponent(Input3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(Input0)
+                    .addComponent(DeleteLast)
+                    .addComponent(ClearAll))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        Output1.setText("0.0");
+
+        Output2.setText("0.0");
+
+        Output3.setText("0.0");
+
+        Output4.setText("0.0");
+
+        jLabel1.setText("£");
+
+        jLabel2.setText("$");
+
+        jLabel3.setText("€");
+
+        jLabel4.setText("¥");
+
+        jLabel5.setText("AED");
+
+        InputAmount.setText("0");
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(InputAmount, javax.swing.GroupLayout.PREFERRED_SIZE, 139, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Output1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Output2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Output3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Output4, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        jPanel2Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {jLabel1, jLabel2, jLabel3, jLabel4, jLabel5});
+
+        jPanel2Layout.linkSize(javax.swing.SwingConstants.HORIZONTAL, new java.awt.Component[] {InputAmount, Output1, Output2, Output3, Output4});
+
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(InputAmount))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel2)
+                    .addComponent(Output1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel3)
+                    .addComponent(Output2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel4)
+                    .addComponent(Output3))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(Output4))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jButton1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jButton3)
-                .addContainerGap(248, Short.MAX_VALUE))
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(102, 102, 102)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3))
-                .addContainerGap(175, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void Input7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Input7ActionPerformed
+        if (InputString.startsWith("0")) {
+            String substring = InputString.substring(1);
+            InputString = substring;
+        }
+        InputString += "7";
+        InputAmount.setText(InputString);
+        Calculations();
+    }//GEN-LAST:event_Input7ActionPerformed
+
+    private void Input8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Input8ActionPerformed
+        if (InputString.startsWith("0")) {
+            String substring = InputString.substring(1);
+            InputString = substring;
+        }
+        InputString += "8";
+        InputAmount.setText(InputString);
+        Calculations();
+    }//GEN-LAST:event_Input8ActionPerformed
+
+    private void ClearAllActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ClearAllActionPerformed
+        InputString = "0";
+        InputAmount.setText(InputString);
+        Calculations();
+    }//GEN-LAST:event_ClearAllActionPerformed
+
+    private void DeleteLastActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_DeleteLastActionPerformed
+        String substring = InputString.substring(0, InputString.length() - 1);
+
+        if ("".equals(substring)) {
+            InputString = "0";
+            System.out.println("If statement");
+        } else {
+            System.out.println("Else Statement");
+            InputString = substring;
+        }
+        System.out.println("Updating label");
+        InputAmount.setText(InputString);
+        Calculations();
+    }//GEN-LAST:event_DeleteLastActionPerformed
+
+    private void Input9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Input9ActionPerformed
+        if (InputString.startsWith("0")) {
+            String substring = InputString.substring(1);
+            InputString = substring;
+        }
+        InputString += "9";
+        InputAmount.setText(InputString);
+        Calculations();
+    }//GEN-LAST:event_Input9ActionPerformed
+
+    private void Input4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Input4ActionPerformed
+        if (InputString.startsWith("0")) {
+            String substring = InputString.substring(1);
+            InputString = substring;
+        }
+        InputString += "4";
+        InputAmount.setText(InputString);
+        Calculations();
+    }//GEN-LAST:event_Input4ActionPerformed
+
+    private void Input5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Input5ActionPerformed
+        if (InputString.startsWith("0")) {
+            String substring = InputString.substring(1);
+            InputString = substring;
+        }
+        InputString += "5";
+        InputAmount.setText(InputString);
+        Calculations();
+    }//GEN-LAST:event_Input5ActionPerformed
+
+    private void Input6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Input6ActionPerformed
+        if (InputString.startsWith("0")) {
+            String substring = InputString.substring(1);
+            InputString = substring;
+        }
+        InputString += "6";
+        InputAmount.setText(InputString);
+        Calculations();
+    }//GEN-LAST:event_Input6ActionPerformed
+
+    private void Input1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Input1ActionPerformed
+        if (InputString.startsWith("0")) {
+            String substring = InputString.substring(1);
+            InputString = substring;
+        }
+        InputString += "1";
+        InputAmount.setText(InputString);
+        Calculations();
+    }//GEN-LAST:event_Input1ActionPerformed
+
+    private void Input2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Input2ActionPerformed
+        if (InputString.startsWith("0")) {
+            String substring = InputString.substring(1);
+            InputString = substring;
+        }
+        InputString += "2";
+        InputAmount.setText(InputString);
+        Calculations();
+    }//GEN-LAST:event_Input2ActionPerformed
+
+    private void Input3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Input3ActionPerformed
+        if (InputString.startsWith("0")) {
+            String substring = InputString.substring(1);
+            InputString = substring;
+        }
+        InputString += "3";
+        InputAmount.setText(InputString);
+        Calculations();
+    }//GEN-LAST:event_Input3ActionPerformed
+
+    private void Input0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Input0ActionPerformed
+        if (InputString.startsWith("0")) {
+            String substring = InputString.substring(1);
+            InputString = substring;
+        }
+        InputString += "0";
+        InputAmount.setText(InputString);
+        Calculations();
+    }//GEN-LAST:event_Input0ActionPerformed
+
+    private void Calculations() {
+        double Pounds = Double.parseDouble(InputString);
+
+        double Pound2Dollar = Pounds * 1.26;
+        double Pound2Euro = Pounds * 1.12;
+        double Pound2Yuan = Pounds * 8.62;
+        double Pound2AED = Pounds * 4.62;
+
+        Output1.setText(Pound2Dollar + "");
+        Output2.setText(Pound2Euro + "");
+        Output3.setText(Pound2Yuan + "");
+        Output4.setText(Pound2AED + "");
+    }
 
     /**
      * @param args the command line arguments
@@ -102,8 +469,29 @@ public class ConverterForm extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
+    private javax.swing.JButton ClearAll;
+    private javax.swing.JButton DeleteLast;
+    private javax.swing.JButton Input0;
+    private javax.swing.JButton Input1;
+    private javax.swing.JButton Input2;
+    private javax.swing.JButton Input3;
+    private javax.swing.JButton Input4;
+    private javax.swing.JButton Input5;
+    private javax.swing.JButton Input6;
+    private javax.swing.JButton Input7;
+    private javax.swing.JButton Input8;
+    private javax.swing.JButton Input9;
+    private javax.swing.JLabel InputAmount;
+    private javax.swing.JLabel Output1;
+    private javax.swing.JLabel Output2;
+    private javax.swing.JLabel Output3;
+    private javax.swing.JLabel Output4;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 }
